@@ -78,18 +78,28 @@
 		<!--second tab-->
 		<ion-tab title="About" icon="ion-grid" href="#/tab/about">
 			<ion-nav-view name="about-tab">
-			        <ion-header-bar class="bar bar-header bar-dark">
-          <h1 class="title">Another Location?</h1>
-          <button class="button button-clear ion-plus-round" ng-click="closeSettings()"></button>
-        </ion-header-bar>
-			<ion-content class="padding">
-            <h3>Create hybrid mobile apps with the web technologies you love.</h3>
-            <p>Free and open source, Ionic offers a library of mobile-optimized HTML, CSS and JS components for building highly interactive apps.</p>
-            <p>Built with Sass and optimized for AngularJS.</p>
-            <p>
-                <a class="button icon icon-right ion-chevron-right" href="#/tab/navstack">Tabs Nav Stack</a>
-            </p>
-        </ion-content>
+			    <ion-header-bar class="bar bar-header bar-dark">
+				  <h1 class="title">Another Location?</h1>
+				  <button class="button button-clear ion-plus-round" ng-click="closeSettings()"></button>
+				</ion-header-bar>
+					<ion-content class="padding">
+					
+						<a class="button icon icon-right ion-chevron-right" href="#/tab/navstack">Box</a>
+					</p>
+				</ion-content>
+			</ion-nav-view>
+		</ion-tab>
+		
+		<!--third tab-->
+		<ion-tab title="Next" icon="ion-more" href="#/tab/next">
+			<ion-nav-view name="about-tab">
+			    <ion-header-bar class="bar bar-header bar-dark">
+				  <h1 class="title">City</h1>
+				</ion-header-bar>
+					<ion-content class="padding box">
+					<current-weather></current-weather>
+					<forecast></forecast>
+					</ion-content>
 			</ion-nav-view>
 		</ion-tab>
 
