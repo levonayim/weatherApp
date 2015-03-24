@@ -1,0 +1,486 @@
+body {
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+  background-color: black;
+}
+#wrapper {
+  background-color: black;
+}
+#scroller {
+}
+.bg-image {
+  position: fixed;
+  width: 120%;
+  height: 120%;
+  background-size: cover;
+}
+
+.bg-fade > .ng-enter {
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-in-out;
+}
+.bg-fade > .ng-enter-active {
+  opacity: 1;
+}
+.bg-fade > .ng-leave {
+  opacity: 1;
+  -webkit-transition: opacity 2s ease-in-out;
+}
+.bg-fade > .ng-leave-active {
+  opacity: 0;
+}
+
+h1,h2,h3,h4,h5 {
+  color: #fff;
+  font-weight: 300;
+}
+
+#main-content {
+  color: #fff;
+  padding: 10px;
+}
+
+.ion-ios7-sunny-outline {
+  color: yellow;
+}
+
+.ionic-refresher-content {
+  color: rgb(255,255,255) !important;
+  text-shadow: none;
+}
+
+/**
+ * Header
+ */
+#header {
+  background-color: transparent !important;
+  height: 44px;
+}
+#header > * {
+  margin-top: 0;
+}
+#header .title {
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 4px;
+}
+#header .title .city {
+  font-size: 16px;
+}
+
+#city-nav-icon {
+  font-size: 11px;
+  margin-right: 2px;
+}
+
+#header .title {
+  margin-top: 25%;
+}
+
+#header .title .city {
+  font-size: 30px;
+}
+
+.scroll-refresher {
+  overflow: visible;
+}
+.ionic-refresher-content {
+  background-color: rgba(0,0,0,0.4);
+  height: 400px;
+  bottom: 0;
+}
+.ionic-refresher-content i {
+  margin-top: 360px;
+}
+/** 
+ * Current weather
+ */
+#wrapper, .pane{
+	background-color:transparent;
+}
+
+#temp-hi, #temp-lo, h5.ng-binding{
+	font-size:20px;
+}
+
+#current-weather {
+	height: 180px;
+	box-sizing: content-box;
+	padding-top: 0px;
+	text-align:center;
+}
+#current-weather > * {
+  color: #fff;
+}
+#current-weather .current-temp {
+  font-size: 100px;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  line-height: 80px;
+}
+
+
+#current-icon {
+  font-size: 42px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#temp-hi, #temp-lo { display: inline-block; }
+#temp-lo {
+  margin-left: 10px;
+}
+
+/**
+ * Forecast and details
+ */
+.weather-box {
+  background-color: rgba(0,0,0,0.2);
+  padding: 9px;
+  margin: 10px 0px;
+  color: rgba(255,255,255,0.9);
+}
+
+.weather-box .title {
+  color: rgba(255,255,255,0.9);
+  font-weight: normal;
+  margin: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+
+
+.weather-box .row {
+  border-bottom: 1px dotted rgba(255,255,255,0.3);
+  margin: 0;
+  padding: 0;
+}
+.weather-box .col {
+  text-align: center;
+}
+.weather-box .col:first-child {
+  text-align: left;
+}
+.weather-box .col:last-child {
+  text-align: right;
+}
+
+.weather-box span {
+  vertical-align: middle;
+}
+
+.weather-box .icon {
+  font-size: 42px;
+  line-height: 24px;
+  vertical-align: middle;
+}
+
+.temp-high {
+  display: inline-block;
+  width: 30px;
+  text-align: right;
+}
+.temp-low {
+  display: inline-block;
+  width: 30px;
+  text-align: right;
+  color: #4a87ee;
+}
+
+
+.no-header {
+  top: 0 !important;
+}
+
+#forecast-scroll {
+  margin: 10px 0px;
+}
+#hourly-forecast {
+  width: 2250px;
+  height: 70px;
+}
+.hourly-hour {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+}
+
+#forecast .credit {
+  float: right;
+  margin-top: 4px;
+  margin-right: 4px;
+}
+#forecast .credit a {
+  color: #fff;
+}
+
+/**
+ * Settings modal
+ */
+
+#settings-modal {
+  background-color: rgba(0,0,0,0.8);
+}
+
+#settings-modal .item {
+  background-color: rgba(0,0,0,0.9);
+  border: none;
+  color: #fff;
+}
+#settings-modal .input-label {
+  color: #fff;
+}
+
+@font-face {
+    font-family:hamburgBold;
+    src: url(../fonts/Hamburg-Bold.ttf);
+}
+
+/*COMMON*/
+html, body {
+	height: 100%;
+	width: 100%;
+}
+.full {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+/**LEVONA EDITS**/
+
+
+.bar.bar-positive {
+	padding:5px 0 5px 0;
+	background: #383b46; /* Old browsers */
+	background: -moz-linear-gradient(left,  #383b46 0%, #464450 35%, #4f474e 67%, #45413b 98%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#383b46), color-stop(35%,#464450), color-stop(67%,#4f474e), color-stop(98%,#45413b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #383b46 0%,#464450 35%,#4f474e 67%,#45413b 98%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #383b46 0%,#464450 35%,#4f474e 67%,#45413b 98%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #383b46 0%,#464450 35%,#4f474e 67%,#45413b 98%); /* IE10+ */
+	background: linear-gradient(to right,  #383b46 0%,#464450 35%,#4f474e 67%,#45413b 98%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383b46', endColorstr='#45413b',GradientType=1 ); /* IE6-9 */
+
+}
+
+
+ .bar .title.title-left, .bar.bar-positive .title {
+      text-align: center; 
+      font-family: hamburgBold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+  }
+
+.tabs-positive > .tabs, .tabs.tabs-positive, .tabs-positive > .tabs {
+  border-width: 0px 0px 2px 0px !important;
+  border-color: #f1e662;
+  background-image: linear-gradient(0deg, #f1e662, #f1e662 50%, transparent 50%);
+  color: #fff;
+  /**background colour**/
+  	background: #383b46; /* Old browsers */
+	background: -moz-linear-gradient(left,  #383b46 0%, #464450 35%, #4f474e 67%, #45413b 98%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#383b46), color-stop(35%,#464450), color-stop(67%,#4f474e), color-stop(98%,#45413b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #383b46 0%,#464450 35%,#4f474e 67%,#45413b 98%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #383b46 0%,#464450 35%,#4f474e 67%,#45413b 98%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #383b46 0%,#464450 35%,#4f474e 67%,#45413b 98%); /* IE10+ */
+	background: linear-gradient(to right,  #383b46 0%,#464450 35%,#4f474e 67%,#45413b 98%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383b46', endColorstr='#45413b',GradientType=1 ); /* IE6-9 */
+
+}
+.tabs-top.tabs-striped .tab-item.tab-item-active{
+  margin-top: 1px;
+  border-color: #f1e662;
+  border-width: 0px 0px 4px 0px !important;
+  border-style: solid;
+}
+
+ .tabs-top > .tabs, .tabs.tabs-top {
+  /* top: 44px; */
+  bottom:0;
+  padding-top: 0;
+  background-position: bottom;
+  border-top-width: 0;
+  border-bottom-width: 1px;
+}
+
+/*** Tiles ***/
+
+
+/**Blocks**/
+.box{
+
+	height:95vh;
+	/**background main**/
+	background: #33405a; /* Old browsers */
+	background: -moz-linear-gradient(top,  #33405a 1%, #7a5866 38%, #775d58 58%, #514c63 85%, #33405a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#33405a), color-stop(38%,#7a5866), color-stop(58%,#775d58), color-stop(85%,#514c63), color-stop(100%,#33405a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #33405a 1%,#7a5866 38%,#775d58 58%,#514c63 85%,#33405a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #33405a 1%,#7a5866 38%,#775d58 58%,#514c63 85%,#33405a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #33405a 1%,#7a5866 38%,#775d58 58%,#514c63 85%,#33405a 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #33405a 1%,#7a5866 38%,#775d58 58%,#514c63 85%,#33405a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33405a', endColorstr='#33405a',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+
+/**Weather Style **/
+main .input { margin-top: 30px; text-align: center; }
+main .input input {
+	color: #222; 
+	border: none; 
+	line-height: 2; 
+	font-size: 2em; 
+	padding: 10px; 
+	border-radius: 0.25em;
+	width: 85%;
+	height: 100%;
+	vertical-align: center;
+	margin: 20px;
+}
+
+main .input input:focus { border: none; outline: none; }
+main h1 { text-align: center; margin-bottom: 100px; }
+main .forecast { text-align: center; }
+main .forecast .today { width: 50%; float: left; margin-left: 25%; margin-right: 25%; background: #1d1f20; margin-bottom: 100px; }
+main .forecast div:nth-child(2) { display: none; }
+main .forecast div:nth-child(3) { width: 33.33333%; float: left; background: #292c2d; }
+main .forecast div:nth-child(4) { width: 33.33333%; float: left; background: #27292b; }
+main .forecast div:last-child { width: 33.33333%; float: right; margin-right: 0; background: #242728; }
+main .forecast h3 { padding: 10px 0; }
+
+.switch { position: absolute; top: 10px; right: 10px; font-size: 0.9em; padding: 5px; background: #292c2d }
+
+
+
+/*******/
+/* * Hide from both screenreaders and browsers: h5bp.com/u */
+/* * Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+/* * Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/* * Extends the .visuallyhidden class to allow the element to be focusable * when navigated to via the keyboard: h5bp.com/p */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+} /* * Hide visually and from screenreaders, but maintain layout */
+
+.invisible {
+	visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+.noflick {
+	perspective: 1000;
+	backface-visibility: hidden;
+	transform: translate3d(0,0,0);
+}
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+* {
+	box-sizing: border-box;
+}
+html,
+button,
+input,
+select,
+textarea {
+	color: #000000;
+}
+
+body {
+	font-size: 1em;
+	line-height: 1;
+	background-color: rgba(255,255,255,1);
+	background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(235,235,235,1) 47%, rgba(222,222,222,1) 100%);
+}
+
+::selection {
+	background: #B3D4FC;
+	text-shadow: none;
+}
+a:focus {
+	outline: none;
+}
+::-webkit-input-placeholder {
+	color: rgba(0,0,0,.7);
+}
+
+:placeholder {
+	/* Firefox 18- */
+	color: rgba(0,0,0,.7);
+}
+
+/* ==========================================================================
+   TILES
+   ========================================================================== */
+   
+body {
+  padding: 25px;
+  font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+button {
+  padding: 12px 30px;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+#list {
+  width: 250px;
+  width: 90%;
+  width: 0;
+  position: relative;
+  display: block;
+  top:5px;
+  z-index:1200;
+}
+
+.tile {
+	z-index:1200;
+  display: block;
+  position: absolute;
+  background-color: green;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+}
