@@ -109,5 +109,3 @@ angular.module('ionic.weather', ['ionic', 'ionic.weather.services', 'ionic.weath
 
 });
 
-
-
